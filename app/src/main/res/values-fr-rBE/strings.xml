@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Projet06</string>
+    <string name="title">Labyrinthe</string>
+    <string name="strength">Force : </string>
+    <string name="def">Défense : </string>
+    <string name="hp">PV : </string>
+    <string name="mp">PM : </string>
+    <string name="menu_perso_title">Sélection de la classe</string>
+    <string name="knight">Chevalier</string>
+    <string name="monk">Moine</string>
+    <string name="knight_desc">Le chevalier est un redoutable combatant au corps à corps. Son armure permet d\'encaisser plus de coups qu\'un autre personnage. Ses valeurs sont l\'honneur et le courage.</string>
+    <string name="monk_desc">Le moine utilise les forces de la nature pour combattre. Sa méditation lui permet de résister aux pires frayeurs.</string>
+    <string name="k_strength_p">19</string>
+    <string name="hp_land">PV :</string>
+    <string name="k_hp_p">35</string>
+    <string name="k_def_p">35</string>
+    <string name="mp_land">PM :</string>
+    <string name="k_mp_p">0</string>
+    <string name="m_strength_p">13</string>
+    <string name="m_hp_p">25</string>
+    <string name="m_def_p">12</string>
+    <string name="m_mp_p">40</string>
+    <string name="confirm">Confirmer la sélection</string>
+    <string name="error1">Vous ne devez choisir qu\'un seul personnage.</string>
+    <string name="playBtn">Jouer</string>
+    <string name="features_title">Caractéristiques détaillées</string>
+    <string name="back">Retour</string>
+    <string name="potions">Potions</string>
+    <string name="points">Points de compétence : </string>
+    <string name="zero">0</string>
+</resources>

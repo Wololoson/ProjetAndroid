@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.wilson.projet03.FeaturesActivity">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/features_title"
+            android:layout_width="362dp"
+            android:layout_height="54dp"
+            android:text="@string/features_title"
+            style="@style/title"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintHorizontal_bias="0.481"
+            tools:layout_editor_absoluteY="6dp"
+            tools:layout_editor_absoluteX="@dimen/defaultMargin" />
+
+        <!-- Nom -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/basicText1"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:id="@+id/name"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/features_title" />
+
+        <!-- Image -->
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="377dp"
+            android:scaleType="fitCenter"
+            android:contentDescription=""
+            android:id="@+id/img"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="138dp"
+            android:text=""
+            style="@style/basicText2"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:id="@+id/desc"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            android:layout_marginTop="@dimen/marginTopIVK"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <!-- Caractéristiques -->
+        <TableLayout
+            android:layout_width="346dp"
+            android:layout_height="44dp"
+            android:id="@+id/features"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/desc">
+            <TableRow
+                android:id="@+id/featuresRow1">
+                <TextView
+                    android:text="@string/strength"
+                    style="@style/basicText3"
+                    android:layout_column="0"
+                    android:id="@+id/featuresStrengthTitle"/>
+                <TextView
+                    android:text=""
+                    style="@style/featuresValues"
+                    android:layout_column="1"
+                    android:id="@+id/featuresStrength"/>
+                <TextView
+                    android:text="@string/hp"
+                    style="@style/basicText3"
+                    android:layout_column="2"
+                    android:id="@+id/featuresHpTitle"/>
+                <TextView
+                    android:text=""
+                    style="@style/featuresValues"
+                    android:layout_column="3"
+                    android:id="@+id/featureshp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/featuresRow2">
+                <TextView
+                    android:text="@string/def"
+                    style="@style/basicText3"
+                    android:layout_column="0"
+                    android:layout_width="100dp"
+                    android:id="@+id/featuresDefTitle"/>
+                <TextView
+                    android:text=""
+                    style="@style/featuresValues"
+                    android:layout_column="1"
+                    android:layout_width="50dp"
+                    android:id="@+id/featuresDef"/>
+                <TextView
+                    android:text="@string/mp"
+                    style="@style/basicText3"
+                    android:layout_column="2"
+                    android:layout_width="160dp"
+                    android:id="@+id/featuresMpTitle"/>
+                <TextView
+                    android:text=""
+                    style="@style/featuresValues"
+                    android:layout_column="3"
+                    android:id="@+id/featuresMp"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Bouton retour -->
+        <Button
+            android:layout_width="328dp"
+            android:layout_height="47dp"
+            android:text="@string/back"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/features"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:id="@+id/backBtn"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

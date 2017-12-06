@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:background">@color/lightGrey</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="basicText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="features_p">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="title_xl">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:background">@color/lightGrey</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="basicText_xl">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="features_p_xl">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="title_perso">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:background">@color/lightGrey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/titleL</item>
+    </style>
+
+    <style name="basicText1">
+        <item name="android:color">@color/black</item>
+        <item name="android:textSize">@dimen/basicText1</item>
+    </style>
+
+    <style name="basicText2">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/basicText2</item>
+    </style>
+
+    <style name="basicText3">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/features</item>
+    </style>
+
+    <style name="featuresValues">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/features</item>
+    </style>
+
+    <style name="basicText1L">
+        <item name="android:color">@color/black</item>
+        <item name="android:textSize">@dimen/basicText1L</item>
+    </style>
+
+    <style name="basicText2L">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/basicText2L</item>
+    </style>
+
+    <style name="basicText3L">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/featuresL</item>
+    </style>
+
+    <style name="featuresValuesL">
+        <item name="android:textColor">@color/darkBlue</item>
+        <item name="android:textSize">@dimen/featuresL</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">@dimen/btn</item>
+    </style>
+
+    <style name="buttonL">
+        <item name="android:textSize">@dimen/btnL</item>
+    </style>
+
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Project06</string>
+    <string name="title">Maze</string>
+    <string name="strength">Strength : </string>
+    <string name="def">Defense : </string>
+    <string name="hp">Health points : </string>
+    <string name="mp">Mana points : </string>
+    <string name="title_activity_menu_perso">MenuPersoActivity</string>
+    <string name="menu_perso_title">Class selection</string>
+    <string name="knight">Knight</string>
+    <string name="monk">Monk</string>
+    <string name="knight_desc">The knight is a formidable melee fighter. His armor allows him to absorb more hits than any other character. His valors are honnor and bravery.</string>
+    <string name="monk_desc">The monk uses the strengths of nature to figth. His meditation allows him to resist to the worst fears.</string>
+    <string name="k_strength_p">19</string>
+    <string name="hp_land">HP :</string>
+    <string name="k_hp_p">35</string>
+    <string name="k_def_p">35</string>
+    <string name="mp_land">Mana :</string>
+    <string name="k_mp_p">0</string>
+    <string name="m_strength_p">13</string>
+    <string name="m_hp_p">25</string>
+    <string name="m_def_p">12</string>
+    <string name="m_mp_p">40</string>
+    <string name="confirm">Confirm selection</string>
+    <string name="error1">You must choose only one character.</string>
+    <string name="playBtn">Play</string>
+    <string name="features_title">Detailed features</string>
+    <string name="back">Back</string>
+    <string name="potions">Potions</string>
+    <string name="points">Skill points : </string>
+    <string name="zero">0</string>
+</resources>

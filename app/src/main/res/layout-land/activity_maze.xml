@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.wilson.projet03.MazeActivity">
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:id="@+id/titre"
+            style="@style/title"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <!-- Labyrinthe -->
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maze"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginStart="@dimen/defaultMargin"
+            app:layout_constraintRight_toLeftOf="@+id/features"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="@+id/titre"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintVertical_bias="0.9">
+        </TableLayout>
+
+        <!-- Caractéristiques du personnage -->
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/features"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/titre">
+        </TableLayout>
+
+        <!-- Flèches de déplacement -->
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrows"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/features"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent">
+            <TableRow>
+                <TextView
+                    android:id="@+id/blank1"
+                    android:layout_column="0"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:src="@drawable/haut"
+                    android:id="@+id/up"
+                    android:layout_column="1"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/blank2"
+                    android:layout_column="2"
+                    android:layout_height="match_parent"/>
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:src="@drawable/gauche"
+                    android:id="@+id/left"
+                    android:layout_column="0"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/blank3"
+                    android:layout_column="1"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:src="@drawable/droite"
+                    android:id="@+id/right"
+                    android:layout_column="2"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:scaleType="fitXY"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/blank4"
+                    android:layout_column="0"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:src="@drawable/bas"
+                    android:id="@+id/down"
+                    android:layout_column="1"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/blank5"
+                    android:layout_column="2"
+                    android:layout_height="match_parent"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/arrows"
+            android:id="@+id/tableLayout"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    style="@style/basicText2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    style="@style/basicText3"
+                    android:paddingLeft="@dimen/defaultMargin"
+                    android:paddingRight="@dimen/defaultMargin"
+                    android:id="@+id/skillPoints"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Potions"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/potions"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/strengthPotion"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/redPotion"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/strengthPotion" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/bluePotion"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/redPotion" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

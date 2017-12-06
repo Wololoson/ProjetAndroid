@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultMargin">8dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="arrowSize">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="marginTopIVM">-8dp</dimen>
+    <dimen name="marginTopIVK">-60dp</dimen>
+    <dimen name="title">30sp</dimen>
+    <dimen name="titleL">45sp</dimen>
+    <dimen name="basicText1">25sp</dimen>
+    <dimen name="features">17sp</dimen>
+    <dimen name="basicText1L">40sp</dimen>
+    <dimen name="featuresL">32sp</dimen>
+    <dimen name="btn">20sp</dimen>
+    <dimen name="basicText2">20sp</dimen>
+    <dimen name="btnL">35sp</dimen>
+    <dimen name="basicText2L">35sp</dimen>
+    <dimen name="marginTopFK">-5dp</dimen>
+    <dimen name="marginRFM">-80dp</dimen>
+    <dimen name="marginTopFM">-39dp</dimen>
+    <dimen name="plusBtn">1dp</dimen>
+</resources>

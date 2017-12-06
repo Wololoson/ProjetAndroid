@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wilson.projet03.MenuPersoActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="362dp"
+            android:layout_height="54dp"
+            android:text="@string/menu_perso_title"
+            style="@style/title"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintHorizontal_bias="0.481"
+            tools:layout_editor_absoluteY="6dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <!-- Checkbox chevalier -->
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/knight"
+            style="@style/basicText1"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:id="@+id/checkBoxKnight"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/titre" />
+
+        <!-- Image chevalier -->
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="377dp"
+            android:src="@drawable/knight"
+            android:scaleType="fitCenter"
+            android:contentDescription="knight image"
+            android:id="@+id/imageViewKnight"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxKnight"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <!-- Description chevalier -->
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="125dp"
+            android:text="@string/knight_desc"
+            style="@style/basicText2"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:id="@+id/descKnight"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            android:layout_marginTop="@dimen/marginTopIVK"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewKnight" />
+
+        <!-- Caractéristiques chevalier -->
+        <TableLayout
+            android:layout_width="346dp"
+            android:layout_height="44dp"
+            android:id="@+id/featuresKnight"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/descKnight">
+            <TableRow
+                android:id="@+id/featuresKnightRow1">
+                <TextView
+                    android:text="@string/strength"
+                    style="@style/basicText3"
+                    android:layout_column="0"
+                    android:id="@+id/featuresKnightStrengthTitle"/>
+                <TextView
+                    android:text="@string/k_strength_p"
+                    style="@style/featuresValues"
+                    android:layout_column="1"
+                    android:id="@+id/featuresKnightStrength"/>
+                <TextView
+                    android:text="@string/hp"
+                    style="@style/basicText3"
+                    android:layout_column="2"
+                    android:id="@+id/featuresKnightHpTitle"/>
+                <TextView
+                    android:text="@string/k_hp_p"
+                    style="@style/featuresValues"
+                    android:layout_column="3"
+                    android:id="@+id/featuresKnighthp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/featuresKnightRow2">
+                <TextView
+                    android:text="@string/def"
+                    style="@style/basicText3"
+                    android:layout_column="0"
+                    android:layout_width="100dp"
+                    android:id="@+id/featuresKnightDefTitle"/>
+                <TextView
+                    android:text="@string/k_def_p"
+                    style="@style/featuresValues"
+                    android:layout_column="1"
+                    android:layout_width="50dp"
+                    android:id="@+id/featuresKnightDef"/>
+                <TextView
+                    android:text="@string/mp"
+                    style="@style/basicText3"
+                    android:layout_column="2"
+                    android:layout_width="160dp"
+                    android:id="@+id/featuresKnightMpTitle"/>
+                <TextView
+                    android:text="@string/k_mp_p"
+                    style="@style/featuresValues"
+                    android:layout_column="3"
+                    android:id="@+id/featuresKnightMp"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Checkbox moine -->
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/basicText1"
+            android:text="@string/monk"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:id="@+id/checkBoxMonk"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/featuresKnight" />
+
+        <!-- Image moine -->
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="377dp"
+            android:src="@drawable/monk"
+            android:scaleType="fitCenter"
+            android:contentDescription="monk image"
+            android:id="@+id/imageViewMonk"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMonk" />
+
+        <!-- Description moine -->
+        <TextView
+            android:layout_width="351dp"
+            android:layout_height="104dp"
+            android:text="@string/monk_desc"
+            style="@style/basicText2"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:id="@+id/descMonk"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            android:layout_marginTop="@dimen/marginTopIVM"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewMonk" />
+
+        <!-- Caractéristiques moine -->
+        <TableLayout
+            android:layout_width="346dp"
+            android:layout_height="44dp"
+            android:id="@+id/featuresMonk"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/descMonk">
+            <TableRow
+                android:id="@+id/featuresMonkRow1">
+                <TextView
+                    android:text="@string/strength"
+                    style="@style/basicText3"
+                    android:layout_column="0"
+                    android:id="@+id/featuresMonkStrengthTitle"/>
+                <TextView
+                    android:text="@string/m_strength_p"
+                    style="@style/featuresValues"
+                    android:layout_column="1"
+                    android:id="@+id/featuresMonkStrength"/>
+                <TextView
+                    android:text="@string/hp"
+                    style="@style/basicText3"
+                    android:layout_column="2"
+                    android:id="@+id/featuresMonkHpTitle"/>
+                <TextView
+                    android:text="@string/m_hp_p"
+                    style="@style/featuresValues"
+                    android:layout_column="3"
+                    android:id="@+id/featuresMonkHp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/featuresMonkRow2">
+                <TextView
+                    android:text="@string/def"
+                    style="@style/basicText3"
+                    android:layout_column="0"
+                    android:layout_width="100dp"
+                    android:id="@+id/featuresMonkDefTitle"/>
+                <TextView
+                    android:text="@string/m_def_p"
+                    style="@style/featuresValues"
+                    android:layout_column="1"
+                    android:layout_width="50dp"
+                    android:id="@+id/featuresMonkDef"/>
+                <TextView
+                    android:text="@string/mp"
+                    style="@style/basicText3"
+                    android:layout_column="2"
+                    android:layout_width="160dp"
+                    android:id="@+id/featuresMonkMpTitle"/>
+                <TextView
+                    android:text="@string/m_mp_p"
+                    style="@style/featuresValues"
+                    android:layout_column="3"
+                    android:id="@+id/featuresMonkMp"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Bouton confirmation -->
+        <Button
+            android:layout_width="356dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="@string/confirm"
+            style="@style/button"
+            android:id="@+id/confirmButton"
+            android:layout_marginRight="@dimen/defaultMargin"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@+id/featuresMonk" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
